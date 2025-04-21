@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f0ad4e;
+            --secondary-color: #a7771d;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --bg-overlay: rgba(0, 0, 0, 0.7);
+            --header-bg: rgba(0, 0, 0, 0.5);
+            --border-radius: 8px;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 30px;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: var(--font-family);
+            background-color: rosybrown;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--header-bg);
+            padding: var(--spacing-sm) 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-list .nav-item {
+            margin: 0 var(--spacing-md);
+        }
+
+        .nav-list .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list .nav-link:hover,
+        .nav-list .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding-top: 60px; /* Adjust based on header height */
+            text-align: center;
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .maladives-details {
+            background-color: var(--bg-overlay);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            max-width: 80%;
+            width: 700px;
+            margin-bottom: var(--spacing-lg);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .maladives-details h1 {
+            font-size: 2.5em;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .maladives-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .maladives-details p {
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating {
+            font-size: 1.8em;
+            color: gold;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating-stars {
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .rating-stars::before {
+            content: '★★★★'; /* Static rating using star characters */
+            letter-spacing: 5px;
+        }
+
+        .back-button {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--primary-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: var(--spacing-lg);
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color);
+            color: var(--text-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desniation">Desniation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="synopsis" class="maladives-details">
+            <h1 style="color:rebeccapurple">BALI</h1>
+            <img src="C:\course files\image\bali.jpg">
+            <p>Bali, also known as the Island of the Gods, is a tropical paradise in Indonesia famous for its lush rice terraces, volcanic mountains, pristine beaches, colorful culture, and spiritual temples. It's a haven for those seeking relaxation, cultural richness, adventure, and vibrant nightlife—all in one dreamy island.Whether you're sipping a coconut on Seminyak Beach, watching the sunset at Uluwatu Temple, exploring rice paddies in Ubud, or diving off the shores of Nusa Penida, Bali has something for everyone.<br>
+                
+                Highlights:
+                Bali, the Island of the Gods, is known for its stunning beaches, from the surfing waves of Kuta and Uluwatu to the tranquil shores of Nusa Dua and Sanur. In Ubud, the cultural heart of Bali, you'll find lush rice terraces, traditional art markets, monkey forests, and peaceful temples surrounded by greenery. For breathtaking views and spiritual experiences, visit Tanah Lot and Uluwatu Temple, both perched on dramatic sea cliffs</p>
+            <p>🧳 Sample Travel Packages to the BALI</p>
+            <p>1.Bali Honeymoon Retreat<br>
+                Duration: 6 Days / 5 Nights
+                Destinations: Ubud – Seminyak – Nusa Dua
+                Includes:
+                Private pool villa stay
+                Sunset dinner cruise
+                Couples' spa + flower bath
+                Beach hopping tour + temple visits (Uluwatu, Tanah Lot)
+                Private airport transfers
+                Estimated Cost: $800 – $1,200 per couple                
+            </p>
+            <p>
+            2.Bali Family Vacation<br>
+            
+            Duration: 7 Days / 6 Nights
+            Destinations: Kuta – Ubud – Nusa Dua
+            Includes:
+            Family suite hotel accommodations
+            Waterbom Bali tickets
+            Monkey Forest & Bali Safari visits
+            Traditional Balinese dance show
+            Daily breakfast & private car with driver
+            Estimated Cost: $1,200 – $1,800 for a family of four
+            </p>
+            <p>
+            3. Bali Adventure & Island Explorer<br>
+            
+            Duration: 8 Days / 7 Nights
+            Destinations: Ubud – Mount Batur – Nusa Penida – Canggu
+            Includes:
+            Mount Batur sunrise trek
+            Nusa Penida snorkeling + day trip
+            White-water rafting or ATV ride
+            Local homestays or eco-lodges
+            Bike tour through rice fields
+            Estimated Cost: $700 – $1,000 per person
+            </p>
+            <div class="rating">
+                <span class="rating-stars"></span>
+            </div>
+
+        </section>
+
+       
+    </script>
+</body>
+</html>

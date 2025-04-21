@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switzerland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f0ad4e;
+            --secondary-color: #a7771d;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --bg-overlay: rgba(0, 0, 0, 0.7);
+            --header-bg: rgba(0, 0, 0, 0.5);
+            --border-radius: 8px;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 30px;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: var(--font-family);
+            background-color: rosybrown;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--header-bg);
+            padding: var(--spacing-sm) 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-list .nav-item {
+            margin: 0 var(--spacing-md);
+        }
+
+        .nav-list .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list .nav-link:hover,
+        .nav-list .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding-top: 60px; /* Adjust based on header height */
+            text-align: center;
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .maladives-details {
+            background-color: var(--bg-overlay);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            max-width: 80%;
+            width: 700px;
+            margin-bottom: var(--spacing-lg);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .maladives-details h1 {
+            font-size: 2.5em;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .maladives-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .maladives-details p {
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating {
+            font-size: 1.8em;
+            color: gold;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating-stars {
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .rating-stars::before {
+            content: '★★★★'; /* Static rating using star characters */
+            letter-spacing: 5px;
+        }
+
+        .back-button {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--primary-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: var(--spacing-lg);
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color);
+            color: var(--text-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desniation">Desniation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="synopsis" class="maladives-details">
+            <h1 style="color:rebeccapurple">SWITZERLAND</h1>
+            <img src="C:\course files\image\switzerland.jpg">
+            <p>Switzerland, a landlocked country in the heart of Europe, is world-renowned for its snow-capped Alps, glacial lakes, fairytale towns, and efficient railways. From the elegance of Zurich and the charm of Lucerne to the adventurous peaks of Interlaken and the serene beauty of Lake Geneva, Switzerland offers a perfect blend of natural wonders, luxury, and cultural richness.Whether you're riding a scenic train through the mountains, sipping Swiss hot chocolate in a chalet, or skiing the slopes of Zermatt, Switzerland is a destination that stays with you forever.<br>
+                
+                Highlights:
+                switzerland dazzles with the Swiss Alps, offering world-class skiing, snowboarding, and stunning mountain views from destinations like Zermatt, St. Moritz, and Jungfrau. Lucerne charms visitors with its medieval old town, wooden Chapel Bridge, and serene lake surrounded by snow-capped peaks. In Interlaken, adrenaline seekers can enjoy skydiving, paragliding, and scenic hikes between two sparkling lakes.</p>
+            <p>🧳 Sample Travel Packages to the SWITZERLAND</p>
+            <p>1.Romantic Switzerland Getaway (Honeymoon Special)<br>
+                
+                Duration: 7 Days / 6 Nights
+                Destinations: Zurich – Lucerne – Interlaken – Zermatt
+                Includes:
+                Swiss Travel Pass (unlimited trains, buses, boats)
+                Glacier Express panoramic train ride
+                Matterhorn tour + Gornergrat railway
+                Lake Lucerne cruise
+                Chocolate & cheese tasting tour
+                Estimated Cost: 2,200 – 3,000 per person
+            </p>
+            <p>
+            2.Best of Switzerland by Train<br>
+           
+            Duration: 8 Days / 7 Nights 
+            Destinations: Geneva – Bern – Interlaken – Lucerne – Zurich
+            Includes:
+            2nd class Swiss rail pass
+            Guided city tours
+            Day trips to Jungfraujoch (Top of Europe) and Mt. Pilatus
+            Hotel accommodation with breakfast<br>
+            Estimated Cost:2,000 – 2,700 per person
+            </p>
+            <p>
+            3. Swiss Alpine Adventure Tour<br>
+            
+            Duration: 6 Days / 5 Nights
+            Destinations: Interlaken – Lauterbrunnen – Grindelwald – Zermatt
+            Includes:
+            Hiking & nature trails
+            Adventure activities (paragliding, snowshoeing, zip line)
+            Jungfrau or Titlis cable car ride
+            Mountain lodge accommodations
+            Estimated Cost:1,800 – 2,500 per person
+            
+            </p>
+            <div class="rating">
+                <span class="rating-stars"></span>
+            </div>
+
+        </section>
+
+       
+    </script>
+</body>
+</html>

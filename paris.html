@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f0ad4e;
+            --secondary-color: #a7771d;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --bg-overlay: rgba(0, 0, 0, 0.7);
+            --header-bg: rgba(0, 0, 0, 0.5);
+            --border-radius: 8px;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 30px;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: var(--font-family);
+            background-color: rosybrown;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--header-bg);
+            padding: var(--spacing-sm) 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-list .nav-item {
+            margin: 0 var(--spacing-md);
+        }
+
+        .nav-list .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list .nav-link:hover,
+        .nav-list .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding-top: 60px; /* Adjust based on header height */
+            text-align: center;
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .maladives-details {
+            background-color: var(--bg-overlay);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            max-width: 80%;
+            width: 700px;
+            margin-bottom: var(--spacing-lg);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .maladives-details h1 {
+            font-size: 2.5em;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .maladives-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .maladives-details p {
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating {
+            font-size: 1.8em;
+            color: gold;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating-stars {
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .rating-stars::before {
+            content: '★★★★'; /* Static rating using star characters */
+            letter-spacing: 5px;
+        }
+
+        .back-button {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--primary-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: var(--spacing-lg);
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color);
+            color: var(--text-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desniation">Desniation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="synopsis" class="maladives-details">
+            <h1 style="color:rebeccapurple">PARIS</h1>
+            <img src="C:\course files\image\paris-zy4x2ow5p7j5qi4a.jpg">
+            <p>Paris, the capital of France, is one of the most iconic and romantic cities in the world. Known as the "City of Light", Paris is celebrated for its rich history, breathtaking architecture, world-class art museums, exquisite cuisine, and charming street cafés.Landmarks like the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and Champs-Élysées draw millions of visitors each year. Paris is also a hub for fashion, culture, and gastronomy, making it a perfect destination for couples, families, and solo travelers a like.<br>
+                Highlights:<br>
+                Top Attractions: Eiffel Tower, Louvre, Arc de Triomphe, Montmartre, Seine River Cruises<br>
+                Food & Drink: Croissants, macarons, escargot, fine wines, Michelin-starred dining<br>
+                Activities: Museum tours, wine tasting, shopping in boutiques, river cruises<br>
+                Best Time to Visit: April to June or September to November (mild weather & fewer crowds)</p>
+            <p>🧳 Sample Travel Packages to the PARIS</p>
+            <p>1. Romantic Paris Getaway<br>
+                
+                Duration: 5 Nights / 6 Days
+                Includes:
+                4-star hotel near the Eiffel Tower
+                Seine River Dinner Cruise
+                Eiffel Tower skip-the-line tickets
+                Versailles Palace day trip
+                Daily breakfast
+                Estimated Cost:1,800–2,500 per couple<br>
+            </p>
+            <p>
+            2. Art & Culture Explorer<br>
+            
+                 Duration: 7 Nights / 8 Days
+                 Includes:
+                 Central Paris hotel stay
+                 Louvre Museum and Musée d'Orsay tickets
+                 Guided walking tour of Montmartre
+                 Day trip to Giverny (Monet’s Gardens)
+                 Metro pass for easy travel
+                 Estimated Cost: $2,000–$3,000 per person
+            </p>
+            <p>
+            3. Budget-Friendly Paris<br>
+              
+            Duration: 4 Nights / 5 Days
+            Includes:
+            Stay in 3-star hotel or boutique hostel
+            Hop-on hop-off bus tour
+            Entry to key landmarks (Eiffel Tower, Notre-Dame)
+            Public transport pass
+            Estimated Cost:700–1,200 per person
+            </p>
+            <div class="rating">
+                <span class="rating-stars"></span>
+            </div>
+
+        </section>
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasmir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f0ad4e;
+            --secondary-color: #a7771d;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --bg-overlay: rgba(0, 0, 0, 0.7);
+            --header-bg: rgba(0, 0, 0, 0.5);
+            --border-radius: 8px;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 30px;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: var(--font-family);
+            background-color: rosybrown;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--header-bg);
+            padding: var(--spacing-sm) 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-list .nav-item {
+            margin: 0 var(--spacing-md);
+        }
+
+        .nav-list .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list .nav-link:hover,
+        .nav-list .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding-top: 60px; /* Adjust based on header height */
+            text-align: center;
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .maladives-details {
+            background-color: var(--bg-overlay);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            max-width: 80%;
+            width: 700px;
+            margin-bottom: var(--spacing-lg);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .maladives-details h1 {
+            font-size: 2.5em;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .maladives-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .maladives-details p {
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating {
+            font-size: 1.8em;
+            color: gold;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating-stars {
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .rating-stars::before {
+            content: '★★★★'; /* Static rating using star characters */
+            letter-spacing: 5px;
+        }
+
+        .back-button {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--primary-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: var(--spacing-lg);
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color);
+            color: var(--text-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desniation">Desniation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="synopsis" class="maladives-details">
+            <h1 style="color:rebeccapurple">KASMIR</h1>
+            <img src="C:\course files\image\kasmir.jpg">
+            <p>Kashmir, often referred to as "Paradise on Earth", is one of the most scenic destinations in India, nestled in the lap of the Himalayas. With its snow-covered mountains, alpine meadows, serene lakes, and blooming gardens, Kashmir is a dream come true for nature lovers and peace seekers.The region is not just about natural beauty—it's rich in culture, tradition, and warm hospitality. Whether you're gliding through the Dal Lake on a shikara, strolling in the Mughal Gardens, or skiing in Gulmarg, Kashmir promises unforgettable experiences.<br>
+                
+                Highlights:
+                Kashmir is renowned for Dal Lake, where you can glide on traditional Shikaras, stay in charming houseboats, and witness floating markets. Gulmarg is a year-round destination offering skiing in winter and lush meadows in summer, along with the famous Gulmarg Gondola ride – one of the highest cable cars in the world. In Pahalgam, scenic views, pine forests, and river valleys like Betaab and Aru invite you to enjoy trekking, horse riding, and peaceful riverside walks.</p>
+            <p>🧳 Sample Travel Packages to the KASHMIR</p>
+            <p>1.Romantic Kashmir (Honeymoon Special)<br>
+                
+                Duration: 6 Days / 5 Nights
+                Destinations: Srinagar – Gulmarg – Pahalgam – Sonmarg
+                Includes:
+                1 night in a luxury houseboat on Dal Lake
+                Shikara ride + Candlelight dinner
+                Gulmarg Gondola ride
+                Daily breakfast and dinner
+                Private cab and sightseeing tours
+                Estimated Cost: ₹35,000 – ₹50,000 per couple
+            </p>
+            <p>
+            2.Kashmir Scenic Splendor<br>
+           
+            Duration: 7 Days / 6 Nights
+            Destinations: Srinagar – Sonmarg – Gulmarg – Pahalgam
+            Includes:
+            3-star or 4-star accommodations
+            Sightseeing to Betaab Valley, Aru Valley, and Thajiwas Glacier
+            Gondola ride + Local guided tours
+            All transportation with driver
+            Estimated Cost: ₹30,000 – ₹45,000 per person
+            </p>
+            <p>
+            3. Budget Backpacker Kashmir<br>
+           
+            Duration: 5 Days / 4 Nights   
+            Destinations: Srinagar – Gulmarg – Pahalgam
+            Includes:
+            Budget hotels or homestays
+            Local bus/tempo traveler options
+            Dal Lake shikara ride
+            Shared day tours
+            Estimated Cost: ₹15,000 – ₹22,000 per person
+            </p>
+            <div class="rating">
+                <span class="rating-stars"></span>
+            </div>
+
+        </section>
+
+       
+    </script>
+</body>
+</html>

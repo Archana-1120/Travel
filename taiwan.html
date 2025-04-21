@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f0ad4e;
+            --secondary-color: #a7771d;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --bg-overlay: rgba(0, 0, 0, 0.7);
+            --header-bg: rgba(0, 0, 0, 0.5);
+            --border-radius: 8px;
+            --spacing-sm: 10px;
+            --spacing-md: 20px;
+            --spacing-lg: 30px;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: var(--font-family);
+            background-color: rosybrown;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--header-bg);
+            padding: var(--spacing-sm) 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-list .nav-item {
+            margin: 0 var(--spacing-md);
+        }
+
+        .nav-list .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list .nav-link:hover,
+        .nav-list .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding-top: 60px; /* Adjust based on header height */
+            text-align: center;
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .maladives-details {
+            background-color: var(--bg-overlay);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            max-width: 80%;
+            width: 700px;
+            margin-bottom: var(--spacing-lg);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .maladives-details h1 {
+            font-size: 2.5em;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .maladives-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .maladives-details p {
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating {
+            font-size: 1.8em;
+            color: gold;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .rating-stars {
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .rating-stars::before {
+            content: '★★★★'; /* Static rating using star characters */
+            letter-spacing: 5px;
+        }
+
+        .back-button {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--primary-color);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: var(--spacing-lg);
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color);
+            color: var(--text-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desniation">Desniation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="synopsis" class="maladives-details">
+            <h1 style="color:rebeccapurple">TAIWAN</h1>
+            <img src="C:\course files\image\taiwan-kdq37yluc9yj47v2.jpg">
+            <p>Taiwan is a vibrant island nation in East Asia, known for its stunning natural beauty, delicious street food, modern cities, and warm hospitality. From the bustling night markets of Taipei, to the serene mountains of Alishan and the sun-soaked beaches of Kenting, Taiwan offers a diverse and unforgettable travel experience.It’s a destination where ancient temples stand beside high-tech towers, and traditional tea culture blends seamlessly with pop culture trends. Whether you're a foodie, nature lover, history buff, or adventure seeker — Taiwan has something for everyone.<br>
+                
+                Highlights:
+                Top Attractions: Taipei 101, Taroko Gorge, Sun Moon Lake, Jiufen Old Street, Kenting National Park
+                Local Experiences: Hot spring baths, night market street food, lantern lighting in Pingxi, cycling around Sun Moon Lake
+                Best Time to Visit: October to April (cooler, drier weather)</p>
+            <p>🧳 Sample Travel Packages to the TAIWAN</p>
+            <p>1. Taipei City Explorer<br>
+                
+                Duration: 4 Nights / 5 Days<br>
+                Includes:
+                Hotel stay in central Taipei
+                Taipei 101 Observatory Pass
+                Day trip to Jiufen & Shifen (with lantern experience)
+                Night market food tour
+                EasyCard for MRT transport
+                Estimated Cost:800–1,200 per person<br>
+            </p>
+            <p>
+            2.Taiwan Nature Adventure<br>
+            
+            Duration: 7 Nights / 8 Days<br>
+            Includes:
+            Travel across Taipei, Taroko Gorge, Sun Moon Lake, and Alishan
+            Scenic train and high-speed rail tickets
+            Guided nature hikes in Taroko and Alishan sunrise tour
+            Boat ride on Sun Moon Lake
+            Estimated Cost:1,500-2,200 per person
+            </p>
+            <p>
+            3. Tropical Taiwan Getaway<br>
+              
+            Duration: 6 Nights / 7 Days
+            Includes:
+            Stay in Kenting National Park area (beachside resort)
+            Water sports activities (snorkeling, paddle boarding)
+            Day trip to Kaohsiung city
+            Relaxation in natural hot springs
+            Estimated Cost: $1,400–$2,000 per person
+            </p>
+            <div class="rating">
+                <span class="rating-stars"></span>
+            </div>
+
+        </section>
+
+       
+    </script>
+</body>
+</html>

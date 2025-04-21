@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Now</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: rosybrown;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    #bookingModal .modal-title {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    #bookingModal .modal-body {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    #bookingModal .form-label {
+      font-size: 1.5rem;
+    }
+
+    #bookingModal .form-control {
+      margin-bottom: 1rem;
+      width: 100%;
+      height: 50px;
+    }
+
+    #bookingModal textarea.form-control {
+      height: auto;
+    }
+
+    #bookingModal .btn-success {
+      font-size: 1.1rem;
+      padding: 0.75rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Changed bg-primary to inline pink background -->
+      <div class="modal-header text-white" style="background-color: pink;">
+        <h5 class="modal-title fs-3" id="bookingModalLabel">Book Wandrew Soul</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center py-4">
+        <form id="bookingForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="fullName" class="form-label fs-5">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fs-5">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label fs-5">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="travelDates" class="form-label fs-5">Travel Dates</label>
+            <input type="text" class="form-control" id="travelDates" placeholder="e.g., June 15 - June 22" required>
+          </div>
+          <div class="mb-3">
+            <label for="travelers" class="form-label fs-5">Number of Travelers</label>
+            <input type="number" class="form-control" id="travelers" min="1" required>
+          </div>
+          <div class="mb-3">
+            <label for="requests" class="form-label fs-5">Special Requests</label>
+            <textarea class="form-control" id="requests" rows="3"></textarea>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="terms" required>
+            <label class="form-check-label fs-6" for="terms">
+              I agree to the terms and conditions
+            </label>
+          </div>
+          <button type="submit" class="btn btn-success w-100 fs-5">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  // Auto-show modal on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const modalEl = document.getElementById('bookingModal');
+    const bookingModal = new bootstrap.Modal(modalEl);
+    bookingModal.show();
+  });
+
+  // Form Validation and SweetAlert
+  document.getElementById('bookingForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const form = e.target;
+    if (form.checkValidity()) {
+      const modalEl = document.getElementById('bookingModal');
+      const modal = bootstrap.Modal.getInstance(modalEl);
+      modal.hide();
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Booking Confirmed!',
+        text: 'Your trip with Wandrew Soul has been booked successfully!',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#28a745'
+      });
+
+      form.reset();
+      form.classList.remove('was-validated');
+    } else {
+      form.classList.add('was-validated');
+    }
+  });
+</script>
+
+</body>
+</html>
